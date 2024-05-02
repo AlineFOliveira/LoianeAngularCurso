@@ -7,6 +7,12 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
+import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
+import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
 
 
 @NgModule({
@@ -14,7 +20,13 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     AppComponent,
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    CicloComponent,
+    DiretivaNgifComponent,
+    DiretivaNgswitchComponent,
+    DiretivaNgForComponent,
+    DiretivaNgclassComponent,
+    DiretivaNgStyleComponent
   ],
   imports: [
     BrowserModule,
