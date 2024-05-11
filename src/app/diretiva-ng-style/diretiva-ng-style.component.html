@@ -2,9 +2,18 @@
     <article>
         <h3>Diretiva ngStyle</h3>
 
-        <button
-            [style.backgroudColor]="ativo ?">
-            Mudar atributo 'ativo'
+        <button 
+        [ngStyle]="{
+            'backgroundColor': ativo ? 'blue' : 'gray',
+            'color': ativo ? 'white' : 'black',
+            'fontWeight': ativo ? 'bold' : 'normal',
+            'fontSize': tamanhoFonte + 'px'
+        }"
+            (click)="mudarAtivo()">
+            Clique para mudar o atributo 'ativo'
         </button>
+        <br>
+        <!--Muda o tamanho da fonte usando o two way data binding-->
+        <input type="text" [(ngModel)]="tamanhoFonte">
     </article>
 </section>

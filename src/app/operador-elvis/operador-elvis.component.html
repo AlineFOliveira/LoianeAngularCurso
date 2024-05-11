@@ -1,0 +1,11 @@
+<section class="styleBinding">
+    <article>
+        <h3>Operador Elvis</h3>
+
+        <p>Descrição: {{ tarefa.desc }}</p>
+        <!--<p>Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : ''}}</p>-->
+        <p>Responsável: {{tarefa.responsavel?.nome}}</p>
+        <!--Se for nulo, não mostra nada, é a mesma coisa que o codigo comentado só que resumido, usado bastante-->
+        
+    </article>
+</section>
