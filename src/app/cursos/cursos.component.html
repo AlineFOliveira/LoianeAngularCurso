@@ -1,0 +1,7 @@
+<h5>Lista de Cursos</h5>
+<!--Services são parecidas com as helpers de um MVC, basicamente também podem ser reutilizadas. Por exempo, uma helper de DeletarDoBanco() seria como uma service de deletar. Seja qualquer crud, poderia reutilizar para deletar algo.-->
+<ul>
+    <li *ngFor="let curso of cursos">
+    {{curso}}
+    </li>
+</ul>
