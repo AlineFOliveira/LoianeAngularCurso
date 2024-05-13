@@ -21,6 +21,9 @@ import { HightlightMouseDirective } from './hightlight-mouse.directive';
 import { HighlightDirective } from './highlight.directive';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoService } from './cursos/curso.service';
+import { CriarCursoModule } from './criar-curso/criar-curso.module';
+
+
 
 
 @NgModule({
@@ -41,12 +44,14 @@ import { CursoService } from './cursos/curso.service';
     DiretivasCustomizadasComponent,
     HightlightMouseDirective,
     HighlightDirective,
-    CursosComponent
+    CursosComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CriarCursoModule
   ],
   providers: [CursoService],
   bootstrap: [AppComponent]

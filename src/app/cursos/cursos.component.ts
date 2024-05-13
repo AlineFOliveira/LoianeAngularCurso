@@ -7,7 +7,7 @@ import { CursoService } from './curso.service';
   styleUrl: './cursos.component.scss'
 })
 export class CursosComponent {
-  cursos: string[] = ['Angular', 'Java', 'Outro'];
+  cursos: string[] = [];
   cursoService: any; //não entendi o que ela fez aqui e tava dando erro, vai ficar como any mesmo
 
   //injetando aqui
@@ -15,5 +15,12 @@ export class CursosComponent {
     //salva ali como se fosse um 'clone' ou algo parecido
     this.cursoService = _cursoService;
 
+  }
+
+  ngOnInit(){
+    this.cursos = this.cursoService.getCursos();
+    this.cursoService.emitirCursoCriado.subscribe(//O subscribe faz ser notificado
+    (curso: any) => console.log(curso)
+    );
   }
 }
