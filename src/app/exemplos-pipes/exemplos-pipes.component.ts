@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-exemplos-pipes',
@@ -15,4 +16,9 @@ export class ExemplosPipesComponent {
     url: 'http://a.co/glqjpRP'
 
   };
+
+  valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Valor assincrono depois de 2 segundos'), 2000)//depois de dois segundos vai ser atribuido o valor
+  });
+
 }
