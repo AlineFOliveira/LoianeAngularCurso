@@ -1,0 +1,15 @@
+<section class="styleBinding">
+    <article>
+        <h3>Pipes</h3>
+        <p>Título: {{ livro.titulo | uppercase | camelCase }}</p>
+        <p>Estrelas: {{ livro.rating | number:'1.1-1' }}</p><!--Numero de casas do numero-->
+        <p>Páginas: {{ livro.numeroPaginas }}</p>
+        <p>Preço: {{ livro.preco | currency:'BRL' }}</p><!--Moeda-->
+        <p>Data Lançamento: {{ livro.dataLancamento | date }}</p>
+        <p>Url: {{ livro.url }}</p>
+        <br>
+        <p>Livro: {{ livro | json }}</p>
+        
+    </article>
+</section>
+

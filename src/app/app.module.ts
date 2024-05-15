@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -22,8 +21,9 @@ import { HighlightDirective } from './highlight.directive';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoService } from './cursos/curso.service';
 import { CriarCursoModule } from './criar-curso/criar-curso.module';
-
-
+import { LogService } from './shared/log.service';
+import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 
 @NgModule({
@@ -45,6 +45,8 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
     HightlightMouseDirective,
     HighlightDirective,
     CursosComponent,
+    ExemplosPipesComponent,
+    CamelCasePipe,
 
   ],
   imports: [
@@ -53,7 +55,7 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
     FormsModule,
     CriarCursoModule
   ],
-  providers: [CursoService],
+  providers: [CursoService, LogService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
