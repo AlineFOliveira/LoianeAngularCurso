@@ -24,6 +24,8 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
 import { LogService } from './shared/log.service';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
+import { RotasMainComponent } from './rotas-main/rotas-main.component';
+import { RotasTesteComponent } from './rotas-teste/rotas-teste.component';
 
 
 @NgModule({
@@ -47,6 +49,8 @@ import { CamelCasePipe } from './camel-case.pipe';
     CursosComponent,
     ExemplosPipesComponent,
     CamelCasePipe,
+    RotasMainComponent,
+    RotasTesteComponent,
 
   ],
   imports: [
