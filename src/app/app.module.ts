@@ -26,6 +26,8 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
 import { CamelCasePipe } from './camel-case.pipe';
 import { RotasMainComponent } from './rotas-main/rotas-main.component';
 import { RotasTesteComponent } from './rotas-teste/rotas-teste.component';
+import { CursosRotaComponent } from './cursos-rota/cursos-rota.component';
+import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 
 
 @NgModule({
@@ -51,6 +53,8 @@ import { RotasTesteComponent } from './rotas-teste/rotas-teste.component';
     CamelCasePipe,
     RotasMainComponent,
     RotasTesteComponent,
+    CursosRotaComponent,
+    CursoDetalheComponent,
 
   ],
   imports: [
