@@ -27,6 +27,7 @@ import { RotasTesteComponent } from './rotas-teste/rotas-teste.component';
 import { CursosRotaComponent } from './cursos-rota/cursos-rota.component';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosComponent } from './alunos/alunos.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { CursosModule } from './cursos/cursos.module';
     RotasTesteComponent,
     CursosRotaComponent,
     CursoDetalheComponent,
+    AlunosComponent,
 
   ],
   imports: [
