@@ -1,1 +1,10 @@
-<p>alunos works!</p>
+<h1>Lista de Alunos</h1>
+
+<div class="lista">
+    <a *ngFor="let aluno of alunos" [routerLink]="[aluno.id]" >
+        {{aluno.nome}}
+        <br>
+    </a>
+</div>
+
+<router-outlet></router-outlet>
