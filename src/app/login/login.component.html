@@ -1,0 +1,11 @@
+<form>
+    <h1>Faça login primeiro</h1>
+    <label for="usuario">Usuário</label>
+    <input [(ngModel)]="usuario.nome" name="usuario" type="text">
+    <br>
+    <label for="senha">Senha</label>
+    <input [(ngModel)]="usuario.senha" name="senha" type="password">
+    <br>
+    <button type="button" (click)="login()">Login</button>
+  </form>
+  

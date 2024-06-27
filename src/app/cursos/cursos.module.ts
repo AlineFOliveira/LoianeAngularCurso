@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { CursosComponent } from './cursos.component';
 import { CursoService } from './curso.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +12,8 @@ import { CursoService } from './curso.service';
   declarations: [CursosComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
 
     
   ],

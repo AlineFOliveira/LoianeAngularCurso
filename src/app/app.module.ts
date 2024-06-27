@@ -28,6 +28,9 @@ import { CursosRotaComponent } from './cursos-rota/cursos-rota.component';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 import { CursosModule } from './cursos/cursos.module';
 import { AlunosModule } from './alunos/alunos.module';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -54,6 +57,7 @@ import { AlunosModule } from './alunos/alunos.module';
     RotasTesteComponent,
     CursosRotaComponent,
     CursoDetalheComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -62,9 +66,10 @@ import { AlunosModule } from './alunos/alunos.module';
     FormsModule,
     CriarCursoModule,
     CursosModule,
-    AlunosModule
+    AlunosModule,
+    CommonModule,
   ],
-  providers: [LogService ],
+  providers: [LogService, AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

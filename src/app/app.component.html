@@ -1,5 +1,7 @@
-<div class="navbarRoutes">
+<!-- se tiver logado, vai emitir true e mostrar isso, senao ao -->
+<div *ngIf="mostrarMenu" class="navbarRoutes">
     <ul>
+        <a routerLink="/login"><li>Login</li></a>
         <a routerLink="/exercícios"><li>Exercícios</li></a>
         <a href="/rotas-teste"><li>Rota</li></a>
         <a routerLink="/alunos"><li>Alunos</li></a>
